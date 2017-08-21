@@ -320,4 +320,6 @@ export default function enableInlineVideo(video, opts = {}) {
 	if (!/iPhone|iPod|iPad/.test(navigator.platform)) {
 		console.warn('iphone-inline-video is not guaranteed to work in emulated environments');
 	}
+
+	return video[IIV];
 }
